@@ -1,0 +1,31 @@
+#crossbtn{
+    float: right;
+    background: transparent;
+    border: none;
+    font-size: large;
+    }
+    ::ng-deep  .mat-form-field{
+        width: 550px !important;
+    }
+::ng-deep .mat-dialog-container {
+    width: 600px !important;
+   
+}
+.color-red{
+    color: red !important;
+}
+.actionBtn{
+    border: 3px solid orange;
+    color: orange;
+
+}
+
+.rejister{
+    float: right;
+}
+.mar-l-38{
+    margin-left: 38px !important;
+}
+.mat-dialog-content {
+  height: auto !important;
+}

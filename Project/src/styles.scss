@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-balham.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mar-b-20{
+    margin-bottom: 20px;
+}
+.mar-t-20{
+    margin-top: 20px !important;
+}
+.mar-r-5{
+    margin-right: 5px;
+}
+.mar_l-75{
+    margin-left: -75px;
+  
+    
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-end{
+    text-align: end;
+}

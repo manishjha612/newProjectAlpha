@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="header">Data from Mock API in card View</div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card" *ngFor="let x of FeatchData">
+          <div  class="card-header">
+            <img class="avatar mx-sm-12 mx-md-0 mr-0 mt-sm-0 mt-8" alt='User profile image'
+              src="../assets/images/profile.jpg"> <div class="ProfileName">{{x.name}}</div>
+          </div>
+        <div class="card-body">
+          <!-- <h5 class="card-title">Special title treatment</h5> -->
+          <p class="card-text"> ID: {{x.id}}</p>
+          <p class="card-text"> Email: {{x.email}}</p>
+          <p class="card-text"> Department: {{x.department}}</p>
+          <p class="card-text"> birthday: {{x.birthday }}</p>
+         <div class="float_R">
+          <button mat-button>
+            <mat-icon>stars</mat-icon>
+          </button>
+          <button mat-button>
+            <mat-icon>deletes</mat-icon>
+          </button>
+         </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>

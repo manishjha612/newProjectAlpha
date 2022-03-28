@@ -1,0 +1,43 @@
+.Custom_Card{
+    width: 20%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+body{
+    background-color: lightgrey;
+}
+mat-card-actions{
+    text-align: end;
+}
+.float{
+    float: left;
+}
+.float_R{
+    float: right;
+}
+.card{
+   
+    margin: 25px 0px 0px 12px;
+}
+.ProfileName{
+    margin: 0px 0px 0px 19px;
+    display: inline-block;
+}
+.header{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 1px 0px 0px;
+    font-family: monospace;
+    font-weight: 300;
+}
+.avatar {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+    font-size: 1.4166666666666667rem;
+    font-weight: 600;
+    text-align: center;
+}

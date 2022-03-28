@@ -1,0 +1,98 @@
+::ng-deep  body{
+    overflow-x: hidden !important;
+}
+
+// header css -----------------
+
+.Companylogo{
+    padding-left: 10px;
+    text-align: left;
+}
+.logoImg{
+    margin-top: 7px;
+    border-radius: 9px;
+    width: 15%;
+    margin-right: 20px;
+}
+.Emp_text{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.user-button{
+    min-width: 48px;
+    height: 62px;
+    outline: 0;
+}
+button .mat-button-wrapper {
+    line-height: normal;
+}
+.avatar {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+    font-size: 1.4166666666666667rem;
+    font-weight: 600;
+    text-align: center;
+}
+.user-button .avatar {
+    border-radius: 50%;
+}
+.float{
+    float: right;
+}
+//nav bar css---------------------
+.title{
+    margin-left: 50px;
+}
+
+.menu{
+    align-content: center;
+    margin-left: 100px;
+}
+.nav-list{
+    text-align: center;
+}
+.sideNavClass{
+    height: 100%;
+}
+a:hover{
+    background-color: #c1d8f3!important;
+}
+.mat-nav-list .mat-list-item:hover {
+    background-color: #c1d8f3!important;
+
+}
+.mat-nav-list .mat-list-item:focus {
+    background-color: #c1d8f3!important;
+
+}
+.sideNavContent{
+    overflow: hidden !important;
+   background-color: #f9f9f9;
+}
+mat-sidenav{
+  
+    width: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 
+}
+ ::ng-deep  .mat-drawer-inner-container{
+    overflow: hidden !important;
+}
+mat-nav-list{
+    padding: 0px;
+}
+.mat-nav-list a.active {
+    background: #c1d8f3!important;
+    border-radius: 40px;
+}
+.mat-drawer-side {
+    border-right:none !important; 
+}
+.mat-sidenav-container{
+min-height: 90vh;
+}

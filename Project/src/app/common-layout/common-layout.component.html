@@ -1,0 +1,61 @@
+<header>
+  <div class="card">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="Companylogo"><img src="http://placeimg.com/640/480" height="50" class="logoImg"> <span
+            class="Emp_text">CompanyName</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <button mat-button class="user-button mr-4 float" [matMenuTriggerFor]="menu">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <img class="avatar mx-sm-12 mx-md-0 mr-0 mt-sm-0 mt-8" alt='User profile image'
+              src="./assets/images/profile.jpg">
+          </div>
+        </button>
+      </div>
+      <mat-menu #menu="matMenu" class="p-0">
+        <button mat-menu-item type="button">
+          <span [routerLink]="'Dashboard'">SignOut</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+</header>
+<div>
+  <mat-sidenav-container class="navbar-content">
+
+    <mat-sidenav #sidenav mode="side" opened class="">
+      <mat-nav-list class="nav-list">
+        <a mat-list-item [routerLink]="''" >
+          <mat-icon>home</mat-icon>
+        </a>
+        <a mat-list-item [routerLink]="'CardView'">
+          <mat-icon>settings</mat-icon>
+        </a>
+        <a mat-list-item [routerLink]="'Client'">
+          <mat-icon>face</mat-icon>
+        </a>
+        <a mat-list-item [routerLink]="'Employees'">
+          <mat-icon>people</mat-icon>
+        </a>
+        <!-- <a mat-list-item [routerLink]="''">
+          <mat-icon>call split</mat-icon>
+        </a> -->
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="sideNavContent">
+      <div class="sideNavClass">
+        <router-outlet></router-outlet>
+
+      </div>
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>

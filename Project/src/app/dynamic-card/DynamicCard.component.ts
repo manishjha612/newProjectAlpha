@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'hello',
+  selector: '',
   template: ``,
   styles: [``]
 })

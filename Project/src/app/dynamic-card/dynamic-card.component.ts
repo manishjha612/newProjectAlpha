@@ -40,6 +40,11 @@ export class DynamicCardComponent implements OnInit {
 }
 
 export class ProfileInfo {
+  FirstName!: string ;
+  LastName!: string;
+  MiddleName!: string;
+  Contact!:number;
+  Email!:any;
   city!: string ;
   state!: string;
   zip!: string;

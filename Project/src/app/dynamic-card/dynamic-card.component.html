@@ -1,56 +1,93 @@
-<mat-dialog-actions >
-    <button class="text-center btn-danger action_btn"  (click)="addcard()">Add card</button>
-    <button class="text-center btn-danger action_btn"  (click)="add()">Add form</button>
-   
-  </mat-dialog-actions>
-  <div>
-    <div class="card" *ngFor="let card of cards" >
-        <div  class="card-header">
-          <img class="avatar mx-sm-12 mx-md-0 mr-0 mt-sm-0 mt-8" alt='User profile image'
-            src="../assets/images/profile.jpg"> <div class="ProfileName"></div>
+<mat-dialog-actions>
+    <button class="text-center btn-danger action_btn" (click)="addcard()">Add card</button>
+    <button class="text-center btn-danger action_btn" (click)="add()">Add form</button>
+
+</mat-dialog-actions>
+<div>
+    <div class="card" *ngFor="let card of cards">
+        <div class="card-header">
+            <img class="avatar mx-sm-12 mx-md-0 mr-0 mt-sm-0 mt-8" alt='User profile image'
+                src="../assets/images/profile.jpg">
+            <div class="ProfileName"></div>
         </div>
-      <div class="card-body">
-        <p class="card-text" ngDefaultControl [(ngModel)]="card.id" > ID:</p>
-        <p class="card-text" ngDefaultControl [(ngModel)]="card.Email"> Email: </p>
-        <p class="card-text" ngDefaultControl [(ngModel)]="card.Department"> Department:</p>
-        <p class="card-text" ngDefaultControl [(ngModel)]="card.birthday"> birthday:</p>
-       <div class="float_R">
-        <button mat-button>
-          <mat-icon>stars</mat-icon>
-        </button>
-        <button mat-button >
-          <mat-icon>deletes</mat-icon>
-        </button>
-       </div>
-      </div>
+        <div class="card-body">
+            <p class="card-text" ngDefaultControl [(ngModel)]="card.id"> ID:A101</p>
+            <p class="card-text" ngDefaultControl [(ngModel)]="card.Email"> Email:mmonu612@gmail.com </p>
+            <p class="card-text" ngDefaultControl [(ngModel)]="card.Department"> Department:Frontend Developer</p>
+            <p class="card-text" ngDefaultControl [(ngModel)]="card.birthday"> birthday:01-12-1998</p>
+            <div class="float_R">
+                <button mat-button>
+                    <mat-icon>deletes</mat-icon>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
 
 
 <div class="card" *ngFor="let profile of profiles">
-	<div class="card-body">
-		<div class="row">
-			<div class="col-lg-4 col-4">
-				<div class="form-group form-group-lg">
-					City: <input type="text" [(ngModel)]="profile.city" class="form-control" required />
-    </div>
-    <br />
-</div>
+    <div class="card-body">
+        <div class="Emp_heading">Employee Details</div>
+        <div class="row">
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    First Name: <input type="text" [(ngModel)]="profile.FirstName" class="form-control" required />
+                </div>
+                <br />
+            </div>
 
-<div class="col-lg-4 col-4">
-    <div class="form-group form-group-lg">
-  State:    <input type="text" [(ngModel)]="profile.state" class="form-control" required />
-    </div>
-    <br />
-</div>
-<div class="col-lg-4 col-4">
-        <div class="form-group form-group-lg">
-      Zipcode:<input type="text" [(ngModel)]="profile.zip" class="form-control"  required />
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    Middle Name: <input type="text" [(ngModel)]="profile.MiddleName" class="form-control" required />
+                </div>
+                <br />
+            </div>
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    Last Name:<input type="text" [(ngModel)]="profile.LastName" class="form-control" required />
+                </div>
+                <br />
+            </div>
         </div>
-        <br />
-</div>
+        <div class="row">
+            <div class="col-lg-6 col-4">
+                <div class="form-group form-group-lg">
+                  Email: <input type="text" [(ngModel)]="profile.Email" class="form-control" required />
+                </div>
+                <br />
+            </div>
+
+            <div class="col-lg-6 col-4">
+                <div class="form-group form-group-lg">
+                    Contact<input type="text" [(ngModel)]="profile.Contact" class="form-control" required />
+                </div>
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    City: <input type="text" [(ngModel)]="profile.city" class="form-control" required />
+                </div>
+                <br />
+            </div>
+
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    State: <input type="text" [(ngModel)]="profile.state" class="form-control" required />
+                </div>
+                <br />
+            </div>
+            <div class="col-lg-4 col-4">
+                <div class="form-group form-group-lg">
+                    Zipcode:<input type="text" [(ngModel)]="profile.zip" class="form-control" required />
+                </div>
+                <br />
+            </div>
+        </div>
+        <button class="text-center btn-danger action_btn" type="reset" >Reset</button>
+        <button class="text-center btn-danger action_btn" type="submit" >Submit</button>
     </div>
 </div>
-</div>
-

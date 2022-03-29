@@ -4,6 +4,7 @@ import { CardViewComponent } from './card-view/card-view.component';
 import { ClientComponent } from './client/client.component';
 import { CommonLayoutComponent } from './common-layout/common-layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DynamicCardComponent } from './dynamic-card/dynamic-card.component';
 import { EmployeesComponent } from './employees/employees.component';
 
 
@@ -21,6 +22,8 @@ const routes: Routes = [
         path: 'Client', component: ClientComponent
       },
       { path: 'CardView', component: CardViewComponent },
+      
+      { path: 'DynamicCard',component:DynamicCardComponent},
 
     ]
   },

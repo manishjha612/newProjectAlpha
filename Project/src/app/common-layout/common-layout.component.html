@@ -29,17 +29,21 @@
 
     <mat-sidenav #sidenav mode="side" opened class="">
       <mat-nav-list class="nav-list">
+        
         <a mat-list-item [routerLink]="''" >
-          <mat-icon>home</mat-icon>
+          <mat-icon>home</mat-icon>Home
+        </a>
+        <a mat-list-item [routerLink]="'DynamicCard'">
+          <mat-icon>supervisor_account</mat-icon>Dynamic_Cards
         </a>
         <a mat-list-item [routerLink]="'CardView'">
-          <mat-icon>settings</mat-icon>
+          <mat-icon>settings</mat-icon>Cards
         </a>
         <a mat-list-item [routerLink]="'Client'">
-          <mat-icon>face</mat-icon>
+          <mat-icon>face</mat-icon>Client
         </a>
         <a mat-list-item [routerLink]="'Employees'">
-          <mat-icon>people</mat-icon>
+          <mat-icon>people</mat-icon>Employees
         </a>
         <!-- <a mat-list-item [routerLink]="''">
           <mat-icon>call split</mat-icon>

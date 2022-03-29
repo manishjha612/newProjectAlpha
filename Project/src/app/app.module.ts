@@ -17,6 +17,7 @@ import{HttpClientModule} from'@angular/common/http';
 import { AddClientModelComponent } from './add-client-model/add-client-model.component';
 import { CardViewComponent } from './card-view/card-view.component'
 import { ButtonRendererComponent } from './employees/ButtonRendererComponent';
+import { DynamicCardComponent } from './dynamic-card/dynamic-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ButtonRendererComponent } from './employees/ButtonRendererComponent';
     DashboardComponent,
     ClientComponent,
     AddClientModelComponent,
-    CardViewComponent
+    CardViewComponent,
+    DynamicCardComponent
   ],
   imports: [
     BrowserModule,

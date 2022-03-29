@@ -41,7 +41,7 @@
         </div>
         <ag-grid-angular   style="width: 100%; height: 576px;"  class="ag-theme-balham"(gridReady)="onGridReady($event)" [rowData]="rowData"
        [editType]="'fullRow'"
-        [frameworkComponents]="frameworkComponents" [columnDefs]="columnDefs">
+        [frameworkComponents]="frameworkComponents" [columnDefs]="columnDefs"  [pagination]="true" [paginationAutoPageSize]="true">
       </ag-grid-angular>
          <!-- <div class="agGrid">
             <ag-grid-angular 
@@ -49,59 +49,10 @@
             class="ag-theme-balham"
             [rowData]="rowData" 
             [columnDefs]="columnDefs"
+            (gridReady)="onGridReady($event)"
             [pagination]="true" [paginationAutoPageSize]="true" >
         </ag-grid-angular>
       </div> -->
-      <!-- <table>
-          <tr *ngFor="let x of FeatchData">
-              <td>
-                name
-              </td>
-              <td>
-                name
-              </td>
-              <td>
-                name
-              </td>
-              <td>
-                name
-              </td>
-          </tr>
-          <tr>
-            <td>
-                {{x.name}}
-              </td>
-              <td>
-                name
-              </td>
-              <td>
-                name
-              </td>
-              <td>
-                name
-              </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-        </tr>
-      </table> -->
       
     </div>
 </div>
